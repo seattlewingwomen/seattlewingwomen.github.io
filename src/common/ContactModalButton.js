@@ -4,9 +4,7 @@ import Swal from "sweetalert2";
 
 import { PrimaryButton } from "./Buttons";
 
-const ContactModalButton = ({ name }) => {
-  const [show, setShow] = useState(false);
-
+const ContactModalButton = ({ modalIsOpen, setShow, name }) => {
   const [yourName, setYourName] = useState("");
   const [message, setMessage] = useState("");
   const [contactInfo, setContactInfo] = useState("");
@@ -27,7 +25,7 @@ const ContactModalButton = ({ name }) => {
     <>
       <PrimaryButton onClick={handleShow}>Connect with {name}</PrimaryButton>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={modalIsOpen} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Contact {name}</Modal.Title>
         </Modal.Header>
