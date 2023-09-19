@@ -9,6 +9,7 @@ import Col from "react-bootstrap/Col";
 import ProfileList from "./common/ProfileList";
 import Gapper from "./common/Gapper";
 import { DescriptionText, TitleBrandText } from "./common/Text";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -26,7 +27,10 @@ const HeroSection = () => {
                 more dating app blues — have a friend submit a dating profile
                 for you today.
               </p>
-              <GhostButton>See singles in your area</GhostButton>
+              <Link to="/singles">
+                <GhostButton>See singles in your area</GhostButton>
+              </Link>
+
               <Gapper />
               <Gapper />
             </DescriptionText>

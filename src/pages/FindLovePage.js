@@ -13,6 +13,7 @@ const FindLovePage = () => {
         <div className="page-title-container">
           <DescriptionText>
             <h2>Full list of Seattle singles</h2>
+            <hr />
           </DescriptionText>
         </div>
         <Gapper />

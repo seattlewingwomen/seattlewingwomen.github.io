@@ -63,6 +63,10 @@ const SubmitProfileForm = () => {
       {submitFor === "friend" ? (
         <Form onSubmit={handleSubmit}>
           <p>
+            Help a friend find love 😍 — Submit a dating profile for a friend
+            and we'll showcase it on our website!
+          </p>
+          <p>
             Note: We prefer you use a service like Google Drive, Box, iCloud,
             etc. to share your friend's profile with us. If you can't, leave the
             field blank and send us the profile as an attachment to

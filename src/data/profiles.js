@@ -9,6 +9,6 @@ export const profiles = [
     name: "Nathan",
     age: "28",
     submittedBy: "Rachel and Jo",
-    pictureLink: "/ben.png",
+    pictureLink: "/nathan.png",
   },
 ];
