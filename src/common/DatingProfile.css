@@ -1,0 +1,20 @@
+.dating-profile-picture {
+    width: 100%;
+    height: auto;
+    max-width: 768px;
+}
+
+/* .dating-profile-name-and-age {
+    font-size: 16px;
+} */
+
+.dating-profile-flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 24px;
+}
+
+.dating-profile-submitted-by {
+    font-size: 0.8rem;
+}
