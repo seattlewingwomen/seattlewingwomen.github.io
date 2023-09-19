@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button, Form } from "react-bootstrap";
 import Swal from "sweetalert2";
+import axios from "axios";
 
 import { PrimaryButton } from "./Buttons";
 
@@ -13,7 +14,12 @@ const ContactModalButton = ({ modalIsOpen, setShow, name }) => {
   const handleShow = () => setShow(true);
   const handleSend = () => {
     setShow(false);
-    console.log(yourName, message, contactInfo); // TODO ping the server
+
+    axios.post("http://localhost:3000/inquiries", {
+      name: yourName,
+      message,
+      contactInfo,
+    });
     Swal.fire(
       "Message sent!",
       `We let ${name} know you're interested.`,

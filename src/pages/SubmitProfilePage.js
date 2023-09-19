@@ -4,6 +4,8 @@ import { Form, Button } from "react-bootstrap";
 import { GhostButton } from "../common/Buttons";
 
 import { DescriptionText, TitleBrandText } from "../common/Text";
+import Swal from "sweetalert2";
+import axios from "axios";
 
 const SubmitProfileForm = () => {
   const [yourNames, setYourNames] = useState("");
@@ -14,7 +16,22 @@ const SubmitProfileForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // TODO
+    axios.post("http://localhost:3000/profile-submissions", {
+      names: yourNames,
+      profileFor: profileFor,
+      contactInfo,
+      link: profileLink,
+    });
+    Swal.fire(
+      "Profile submitted!",
+      `We'll post it on our website soon.`,
+      "success"
+    );
+    setYourNames("");
+    setProfileFor("");
+    setProfileLink("");
+    setContactInfo("");
+    setSubmitFor(null);
   };
 
   const resetState = () => {
@@ -61,7 +78,7 @@ const SubmitProfileForm = () => {
       ) : null}
 
       {submitFor === "friend" ? (
-        <Form onSubmit={handleSubmit}>
+        <Form>
           <p>
             Help a friend find love 😍 — Submit a dating profile for a friend
             and we'll showcase it on our website!
@@ -110,7 +127,7 @@ const SubmitProfileForm = () => {
             />
           </Form.Group>
 
-          <GhostButton variant="primary" type="submit">
+          <GhostButton onClick={handleSubmit} variant="primary" type="submit">
             Submit
           </GhostButton>
         </Form>
