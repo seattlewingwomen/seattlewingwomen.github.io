@@ -57,7 +57,7 @@ const SinglesSection = () => {
           <Col md={12}>
             <DescriptionText>
               <h2>
-                <b>Singles in your area:</b>
+                <b>Who's looking for love:</b>
                 <Gapper />
                 <Gapper />
               </h2>
