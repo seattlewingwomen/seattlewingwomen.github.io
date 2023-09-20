@@ -28,7 +28,7 @@ const HeroSection = () => {
                 for you today.
               </p>
               <Link to="/singles">
-                <GhostButton>See singles in your area</GhostButton>
+                <GhostButton>See list of singles</GhostButton>
               </Link>
 
               <Gapper />

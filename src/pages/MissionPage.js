@@ -15,7 +15,7 @@ const MissionPage = () => {
           </TitleBrandText>
           <DescriptionText>
             <p>
-              The Seattle Wingwomen were created because we a few wonderful
+              The Seattle Wingwomen were created because we had a few wonderful
               friends who were still inexplicably single, and we wanted to help
               them find love. After many, many moons of toiling away on the
               dating apps — which are soul-sucking, self-esteem crushing, and
