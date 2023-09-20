@@ -90,7 +90,8 @@ const SubmitProfileForm = () => {
             Note: We prefer you use a service like Google Drive, Box, iCloud,
             etc. to share your friend's profile with us. If you can't, leave the
             field blank and send us the profile as an attachment to
-            seattle.wingwomen@gmail.com
+            seattle.wingwomen@gmail.com. You can also shoot us an email to take
+            the profile down in case your friend doesn't want it up anymore.
           </p>
           <Form.Group className="mb-3">
             <Form.Label>Your Name(s):</Form.Label>
