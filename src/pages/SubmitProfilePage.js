@@ -16,12 +16,15 @@ const SubmitProfileForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:3000/profile-submissions", {
-      names: yourNames,
-      profileFor: profileFor,
-      contactInfo,
-      link: profileLink,
-    });
+    axios.post(
+      "http://seattle-wingwomen-server-4d833a733018.herokuapp.com/profile-submissions",
+      {
+        names: yourNames,
+        profileFor: profileFor,
+        contactInfo,
+        link: profileLink,
+      }
+    );
     Swal.fire(
       "Profile submitted!",
       `We'll post it on our website soon.`,

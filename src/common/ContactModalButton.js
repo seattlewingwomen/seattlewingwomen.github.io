@@ -15,11 +15,14 @@ const ContactModalButton = ({ modalIsOpen, setShow, name }) => {
   const handleSend = () => {
     setShow(false);
 
-    axios.post("http://localhost:3000/inquiries", {
-      name: yourName,
-      message,
-      contactInfo,
-    });
+    axios.post(
+      "http://seattle-wingwomen-server-4d833a733018.herokuapp.com/inquiries",
+      {
+        name: yourName,
+        message,
+        contactInfo,
+      }
+    );
     Swal.fire(
       "Message sent!",
       `We let ${name} know you're interested.`,
