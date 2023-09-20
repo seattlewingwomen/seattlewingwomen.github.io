@@ -13,6 +13,7 @@ import { TitleBrandText, DescriptionText } from "./Text";
 const LogoBar = () => {
   // Page-wide logging
   useEffect(() => {
+    let a = 2;
     const hasVisited = localStorage.getItem("userHasVisited");
     if (!hasVisited) {
       axios.post(
