@@ -17,7 +17,7 @@ const SubmitProfileForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios.post(
-      "http://seattle-wingwomen-server-4d833a733018.herokuapp.com/profile-submissions",
+      "https://seattle-wingwomen-server-4d833a733018.herokuapp.com/profile-submissions",
       {
         names: yourNames,
         profileFor: profileFor,

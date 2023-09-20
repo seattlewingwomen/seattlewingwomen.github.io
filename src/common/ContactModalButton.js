@@ -16,7 +16,7 @@ const ContactModalButton = ({ modalIsOpen, setShow, name }) => {
     setShow(false);
 
     axios.post(
-      "http://seattle-wingwomen-server-4d833a733018.herokuapp.com/inquiries",
+      "https://seattle-wingwomen-server-4d833a733018.herokuapp.com/inquiries",
       {
         name: yourName,
         message,
