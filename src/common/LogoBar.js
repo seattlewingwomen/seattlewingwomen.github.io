@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import "./LogoBar.css";
 import { Link } from "react-router-dom";
@@ -6,9 +6,25 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 
+import axios from "axios";
+
 import { TitleBrandText, DescriptionText } from "./Text";
 
 const LogoBar = () => {
+  // Page-wide logging
+  useEffect(() => {
+    const hasVisited = localStorage.getItem("userHasVisited");
+    if (!hasVisited) {
+      axios.post(
+        "https://seattle-wingwomen-server-4d833a733018.herokuapp.com/visit",
+        {
+          userAgent: navigator?.userAgent,
+        }
+      );
+      localStorage.setItem("userHasVisited", "true");
+    }
+  });
+
   return (
     <Container fluid className="logobar-container">
       <Navbar expand="lg">
