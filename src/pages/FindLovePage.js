@@ -12,7 +12,7 @@ const FindLovePage = () => {
       <div className="page-body-container container-white">
         <div className="page-title-container">
           <DescriptionText>
-            <h2>Full list of Seattle singles</h2>
+            <h2>Full list of singles</h2>
             <hr />
           </DescriptionText>
         </div>
