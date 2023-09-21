@@ -14,7 +14,7 @@ const LogoBar = () => {
   // Page-wide logging
   useEffect(() => {
     let a = 2;
-    const hasVisited = localStorage.getItem("userHasVisited");
+    const hasVisited = localStorage.getItem("userHasVisited1");
     if (!hasVisited) {
       axios.post(
         "https://seattle-wingwomen-server-4d833a733018.herokuapp.com/visit",
@@ -22,7 +22,7 @@ const LogoBar = () => {
           userAgent: navigator?.userAgent,
         }
       );
-      localStorage.setItem("userHasVisited", "true");
+      localStorage.setItem("userHasVisited1", "true");
     }
   });
 
