@@ -13,4 +13,11 @@ export const profiles = [
     submittedBy: "Rachel and Jo",
     pictureLink: "/nathan.png",
   },
+  {
+    id: 3,
+    name: "Sawyer",
+    age: "28",
+    submittedBy: "Paige",
+    pictureLink: "/sawyer.png",
+  },
 ];

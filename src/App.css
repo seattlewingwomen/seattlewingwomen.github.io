@@ -17,7 +17,7 @@
 }
 
 .hero-image {
-  background-image: url("../public/couple.jpeg");
+  background-image: url("../public/couple.jpg");
   max-height: 768px;
   background-size: cover;
   background-position: center center;
